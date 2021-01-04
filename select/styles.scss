@@ -30,7 +30,7 @@ $height: 46px;
     }
 
     &__input {
-        border: 1px solid #ccc;
+        border: 1px solid rgb(183, 221, 199);
         border-radius: 5px;
         height: $height;
         display: flex;
@@ -43,14 +43,14 @@ $height: 46px;
     &__dropdown {
         display: none;
         position: absolute;
-        border: 1px solid #ccc;
+        border: 1px solid rgb(183, 221, 199);
         border-radius: 5px;
         top: $height;
         left: 0;
         right: 0;
         max-height: 200px;
         overflow-y: auto;
-        box-shadow: 2px 3px 5px rgba(0, 0, 0,.3);
+        box-shadow: 2px 3px 5px rgb(183, 221, 199);
     }
 
     &__list{
@@ -61,12 +61,16 @@ $height: 46px;
 
     &__item{
         padding: 1rem;
-        border-bottom: 1px solid #ccc;
+        border-bottom: 1px solid rgb(183, 221, 199);
         transition: all .2s linear;
         cursor: pointer;
 
         &:hover{
-            background-color: #eee;
+            background-color: rgb(219, 233, 225);
+        }
+
+        &.selected{
+            background-color: rgb(183, 221, 199);
         }
     }
 }
